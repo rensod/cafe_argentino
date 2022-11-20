@@ -1,9 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
@@ -17,66 +17,209 @@
             <div><a href="#"><img src="img/logo_nav.png" alt="logo"></a></div>
             <ul class="menu">
                 <li><a href="#">INICIO</a></li>
-                <li><a href="#menu">MENÚ</a></li>
-                <li><a href="#cafe">CAFÉ</a></li>
                 <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#cafe">CAFÉ</a></li>
+                <li><a href="#promociones">PROMOCIONES</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </div>
     </nav>
 
-    
-    <header class="encabezado">       
+<!-- SLIDER -->
+
+    <figure id="galeria">
+        <div class="galeria">
+                        <div id="myCarousel" class="carousel">
+                        <div class="carousel__slide">
+                          <img data-lazy-src="img/galeria/1.jpg" />
+                        </div>
+                        <div class="carousel__slide">
+                          <img data-lazy-src="img/galeria/2.jpg" />
+                        </div>
+                        <div class="carousel__slide">
+                          <img data-lazy-src="img/galeria/3.jpg" />
+                        </div>
+                        <div class="carousel__slide">
+                            <img data-lazy-src="img/galeria/4.jpg" />
+                          </div>
+                          <div class="carousel__slide">
+                            <img data-lazy-src="img/galeria/5.jpg" />
+                          </div>
+                          <div class="carousel__slide">
+                            <img data-lazy-src="img/galeria/6.jpg" />
+                          </div>
+                          <div class="carousel__slide">
+                            <img data-lazy-src="img/galeria/7.jpg" />
+                          </div>
+                          <div class="carousel__slide">
+                            <img data-lazy-src="img/galeria/8.jpg" />
+                          </div>
+                          <div class="carousel__slide">
+                            <img data-lazy-src="img/galeria/9.jpg" />
+                          </div>
+                          <div class="carousel__slide">
+                            <img data-lazy-src="img/galeria/10.jpg" />
+                          </div>
+                      </div>
+    </figure>
+
+<!-- FIN -->
+
+<!-- HERO -->
+
+    <header id="nosotros" class="encabezado">       
             <img src="img/hero.png" alt="Café Argentino"> <div class="centrar">
         <p class="titulo">UN CAFÉ A TU MEDIDA</p>
         <h1>Café Argentino es la primera productora de café 100% Argentino, mano de obra local y la mayor calidad en nuestros productos para que tengas siempre lo mejor.</h1>
         <a href="#sabermas" class="boton">¿QUERÉS SABER MAS?</a>
     </div>
     </header>
-   
-    <section class="contenedor">
-        <div><h2 class="servicios">CONOCÉ NUESTROS SERVICIOS</h2></div>
+
+<!-- FIN HERO -->
+
+<!-- SERVICIOS -->
+
+    <section id="cafe" class="contenedor">
+          <h2 class="titulo">NUESTROS SERVICIOS</h2>
             <div class="seccion">
-                <article>
-                        <h2>DELIVERY</h2>
+                <article id="delivery" class="card">
                         <div class="coluno">
                             <div>
-                                <a href="#compra"><img src="img/chica.jpg" alt="delivery"></a>
-                                <p>
-                                    Ahorrá tiempo pidiendo con anticipación y pagando desde pedicafe.com.ar.
-                                </p>
-                            </div>
+                             <img src="img/chica.jpg" alt="delivery">
+                               </div>
                             <div>
                                 <a href="#puntos"><img src="img/delivery.jpg" alt="delivery"></a>
-                                <p>
-                                    Podés pedir tu bebida favorita donde sea que estés con operadores logísticos como Pedidos Ya.
-                                </p>
                             </div>
                         </div>
+                        <h2>DELIVERY</h2>
+                        <div class="coluno">
+                          <p>
+                           Podés pedir tu bebida favorita donde sea que estés con operadores logísticos como Pedidos Ya.
+                          </p>
+                        </div>
+                        <a class="boton" href="#">Más información</a>
                 </article>
                 
-                <article>
-                        <h2>TIENDAS</h2>
+                <article id="tiendas" class="card">
                         <div class="columna">
-                                <a href="#cafeteria"><img src="img/cafeteria.jpg" alt="delivery"></a>
+                               <img src="img/cafeteria.jpg" alt="delivery">
+                                <h2>TIENDAS</h2>
                                 <p class="textcaf">En nuestras tiendas siempre te esperan nuestros
                                     baristas capacitados para ofrecerte
                                     una bebida muy especial.</p>
                         </div>
+                        <a class="boton" href="#">Más información</a>
                 </article>
                 
-                <article>
-                        <h2>NOVEDADES</h2>
+                <article id="novedades" class="card">
                         <div class="columna">
-                            <a href="#novedades"><img src="img/capsulas.jpg" alt="novedades"></a>
-                            <p class="capsulas">PROBÁ LAS NUEVAS CAPSULAS</p>
+                         <img src="img/capsulas.jpg" alt="novedades">
+                            <h2>NUEVAS CAPSULAS</h2>
                             <p>Café con leche / Capuccino / Café Italiano</p>
                         </div>
+                        <a class="boton" href="#">Más información</a>
                 </article>
             </div>
     </section>  
+
+<!-- FIN SERVICIOS -->
+
+<!-- PRODUCTOS -->
+
+    <section id="productos" class="contenedor">
+      <h2 class="titulo">PRODUCTOS</h2>
+      <div class="productos">
+        <a href="img/productos/1.jpg" data-fancybox="gallery"
+        data-caption="INTENSO">
+          <img src="img/productos//chicas/1.jpg" alt="producto_1">
+        </a>
+        <a href="img/productos/2.jpg" data-fancybox="gallery"
+        data-caption="SELECTO">
+          <img src="img/productos//chicas/2.jpg" alt="producto_2">
+        </a>
+        <a href="img/productos/3.jpg" data-fancybox="gallery"
+        data-caption="NATURAL">
+          <img src="img/productos//chicas/3.jpg" alt="producto_3">
+        </a>
+        <a href="img/productos/4.jpg" data-fancybox="gallery"
+        data-caption="GRAN AROMA">
+          <img src="img/productos//chicas/4.jpg" alt="producto_4">
+        </a>
+        <a href="img/productos/5.jpg" data-fancybox="gallery"
+        data-caption="PIKE PLACE">
+          <img src="img/productos//chicas/5.jpg" alt="producto_5">
+        </a>
+        <a href="img/productos/6.jpg" data-fancybox="gallery"
+        data-caption="MEZCLA">
+          <img src="img/productos//chicas/6.jpg" alt="producto_6">
+        </a>
+      </div>
+    </section>  
     
-    
+<!-- FIN PRODUCTOS -->
+
+<!-- PROMOS -->
+
+<section id="promociones" class="contenedor">
+  <h2 class="titulo">PROMOCIONES</h2>
+    <div class="seccion">
+
+      <article id="novedades" class="promocard">
+        <div class="columna">
+          <img src="img/promo/1.png" alt="promo1">
+          <h2>INTENSO 500g + NATURAL 500g</h2>
+          <p class="precio">$2350</p>
+          <p>hasta 12 cuotas s/interes</p>
+        </div>
+          <a class="boton" href="#">COMPRAR</a>
+      </article>
+
+      <article id="novedades" class="promocard">
+        <div class="columna">
+          <img src="img/promo/2.png" alt="promo2">
+          <h2>INTENSO 500g + SELECTO 500g</h2>
+          <p class="precio">$1800</p>
+          <p>hasta 12 cuotas s/interes</p>
+        </div>
+          <a class="boton" href="#">COMPRAR</a>
+      </article>
+
+      <article id="novedades" class="promocard">
+        <div class="columna">
+          <img src="img/promo/3.png" alt="promo3">
+          <h2>SELECTO 500g + NATURAL 500g</h2>
+          <p class="precio">$2600</p>
+          <p>hasta 12 cuotas s/interes</p>
+        </div>
+          <a class="boton" href="#">COMPRAR</a>
+      </article>
+    </div>
+</section>  
+
+<!-- FIN PROMOS -->  
+
+
+<!-- CONTACTO -->
+
+<section id="contacto" class="contenedor">
+      <h2 class="titulo">CONTACTO</h2>
+        <div class="contacto">
+                    <h2>ENVIANOS TU CONSULTA</h2>
+                      <div class="consulta">
+                        <input class="campo" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                        <input class="campo" type="text" name="apellido" id="apellido" placeholder="Apellido">
+                        <input class="campo" type="email" name="e-mail" id="e-mail" placeholder="E-mail">
+                        <input class="campocons" type="text" name="consulta" id="consulta" placeholder="Tu consulta aquí...">
+                      </div>
+                      <div class="botones">
+                        <input class="boton" type="submit" name="Enviar" value="Enviar">
+                        <input class="boton" type="reset" name="Borrar" value="Borrar">
+                      </div>      
+        </div>
+</section>  
+
+<!-- FIN CONTACTO -->
+
     <footer class="contendedor footer">
         <div class="footer">
             <a href="Facebook.com"><img src="img/face.png" alt="Face" title="Facebook"></a>
@@ -92,7 +235,16 @@
              <a href="#"><img src="img/logoresp.png" alt="logo"></a>
         </div>
     </footer>     
-
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>   
+<script>
+        const myCarousel = new Carousel(document.querySelector(".carousel"), {
+  slides: [
+    {
+      html: "1",
+    },
+  ],
+});
+    </script>
 </body>
 
 </html>
