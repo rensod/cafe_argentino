@@ -28,8 +28,8 @@ body{
 /*barra de navegacion*/
 
 nav{
-    z-index: 10;
-    height: 85px;
+    z-index: 1000;
+    height: 60px;
     display: flex;
     align-items: center;
     position: fixed;
@@ -40,7 +40,8 @@ nav{
 }
 
 .contenedor{
-    width: 1000px;
+    margin-top: 120px;
+    width: 1300px;
 }
 
 .nav{
@@ -80,22 +81,33 @@ nav{
 /*figure*/
 
 #galeria{
-    margin-top: 85px;
+    background-color: rgb(17, 17, 17);
     width: 100%;
-    height: 350px;
     overflow: hidden;
 }
 
+.carousel {
+    color: rgb(250, 240, 225);
+    --carousel-button-svg-stroke-width: 0;
+  }
+  
+  .carousel__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 /*fin figure*/
 
 /*encabezado*/
 
 header{
+    background-color: rgb(17, 17, 17);
     background-image: url(img/logoizq.png);
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    margin: 50px auto;
+    margin: auto;
 }
 
 .centrar{
@@ -105,6 +117,33 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.centrar img{
+    margin: 30px;
+}
+
+.centrar .titulo{
+    color: rgb(250, 240, 225);
+}
+
+.encabezado .centrar h1{
+    color: rgb(250, 240, 225);
+}
+
+.centrar .boton{
+    color: rgb(250, 240, 225);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    border: 1px solid;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50px;
+    width: 170px;
+    height: 40px;
+    margin-top: 40px;
+    transition: all 200ms ease;
 }
 
 .boton{
@@ -132,6 +171,7 @@ header{
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
+    height: 500px;
 }
 
 .encabezado div{
@@ -318,10 +358,10 @@ article h2{
     width: 100%;
     height: 450px;
     color: black;
-    background-color:  rgb(208, 208, 208);
+    background-color:  rgb(255, 255, 255);
     margin: 15px;
     transition: all 300ms ease;
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(78, 78, 78, 0.3);
     filter: grayscale();
 }
 
@@ -390,7 +430,7 @@ article h2{
 
 .campocons{
     margin-top: 20px;
-    height: 400px;
+    height: 300px;
 }
 
 
