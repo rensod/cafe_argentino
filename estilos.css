@@ -19,6 +19,11 @@ ul{
 
 /*fin reset*/
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 130px;
+}
+
 body{
     background-color: rgb(250, 240, 225);
     scroll-behavior: smooth;
@@ -71,9 +76,6 @@ nav{
 
 .menu li a:hover{
     color: rgb(255, 255, 255);
-    background-color: rgb(83, 59, 51);
-    padding: 5px 25px;
-    border-radius: 50px;
 }
 
 /*fin barra de navegacion*/
@@ -207,13 +209,12 @@ header{
 /*secciones*/
 
 section{
-    width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
-    margin-bottom: 85px;
-    }
+    margin-bottom: 100px;
+}
 
 .titulo{
     text-align: center;
@@ -226,14 +227,46 @@ section{
 }
 
 .seccion{
-    width: 1000px;
     display: flex;
     margin: 0 auto;
+}
+
+/*conocenos*/
+
+#nosotros{
+    background-image: url(img/nosotros.jpg);
+    width: 100%;
+    margin-top: 0;
+}
+
+.fondo{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .conocenos{
+    width: 650px;
+    margin-top: 30px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.contenedor .fondo h2{
+    color: rgb(250, 240, 225)
+}
+
+.contenedor .conocenos p,strong{
+    color:aliceblue;
+    margin-top: 5px;
 }
 
 /*servicios*/
 
 .card{
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -344,6 +377,8 @@ article h2{
 }
 
 #productos img{
+    border: 1px solid;
+    border-color:  rgba(83, 59, 51, 0.2);
     border-radius: 10px;
 }
 
@@ -389,6 +424,11 @@ article h2{
 /*fin de promociones*/
 
 /*formulario consultas*/
+
+input{
+    border: 1px solid;
+    border-color:  rgba(83, 59, 51, 0.3);
+}
 
 #contacto h2{
     font-family: 'Barlow Condensed', sans-serif;
